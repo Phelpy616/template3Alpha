@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesOfContact.css" />
+    <link rel="stylesheet" href="mobileVersion/stylesOfContact.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navigationBar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div>
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"
+        />
+      </div>
+      <div class="logo"><img src="images/logo.jpg" alt="" /></div>
+      <div class="cart">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAZpJREFUaEPtmEFSwzAMRX83rFhxIjgQnKFsegEOBD0QrFixoVUnYRhHsWVFkp0Ze9GZZiznP33JcXLAzsdh5/oxAFo7OBzo0YFfRtQHgPP1+rG14PT+XAlxAHPca28QtQAE8gSAHOliaABIPEF0MSS70COA90RtNy5IAEg7ARDIPLpxQQrAuSCNdS21GhGpC12UUQ0A54JrdpnFF9t4DQCtl3tGRMAseq8WIC2jCNHZh28tQOsy2lxC3JYa6cJi46h1gMS2coF99mgAWjUze5DUArRoZlarFiC6jFaP8VqA6GZ2AYh0YTXRWxyIciH7FrgVIMKF7KFxK4D3llp877AA8NxSix8RLAA8y6iorzhBeNDxcKGYfdJmBeDhQiiARzOLkiuaJCwjKxeqPmNaAgg5badZA9wDuJsk/gD4FsrVxpk1Mel8uP7Q1+vnSfTb9P+rAKGNuy1r5QBl8PRP/KyZIF4yANq4vyWtACiLnytCc/fQxg2ANNnaUtDGmTuw+yYW7pb206ya2F6ZcMUBIEyU27ThgFtqhQtfAGeWUDHsVkhlAAAAAElFTkSuQmCC"
+        />
+      </div>
+    </div>
+
+    <div class="menu">
+      <div data-url="posters.html"><h3>POSTERS</h3></div>
+      <div data-url="clothing/clothing.html"><h3>CLOTHING</h3></div>
+      <div data-url="cartPage.html"><h3>CART</h3></div>
+      <div data-url="index.html"><h3>HOME</h3></div>
+      <div data-url="about.html"><h3>ABOUT</h3></div>
+      <div data-url="contact.html"><h3>CONTACT</h3></div>
+    </div>
+
+    <form id="contact-form" method="POST" action="#">
+      <input
+        type="email"
+        class="input-control"
+        placeholder="Enter email"
+        id="email"
+      />
+
+      <input
+        type="text"
+        class="input-control"
+        placeholder="Enter name"
+        id="name"
+      />
+
+      <textarea
+        class="contact-msg"
+        rows="9"
+        placeholder="Enter Message"
+        id="message"
+      ></textarea>
+      <button type="submit" class="btn-submit">Submit</button>
+
+      <div class="sendingEmailStatus">
+        <!-- <div class="spinner">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAclJREFUaEPtmVFuAyEMRJOTtT1Zm5M1OVkbS7GEiM3YgFkj7f6lpDBv7HUMXC+bP9fN9V9OgKMjODMCny+Y7wKK/jZzjTe/ZkxOIkk0A9SLzFhDDfTI5CT415BCI2vA6XsmR46njsDPK100Z+7PnL8Vg/Q59PFEoCWeRNP48scKoIk/TDg7ZQHQxH89K094iqCQIgCt0qQQT3AI4E9wII14BCClzuE576nRtfvpxLciILmP0g29byHjmihqEcreJqX7rQjU6ZPSfQ2gTh+q9VR5Uj6SszVA2vTRIlDnf6q6bymj2wNs8wJrKZQNoKlHeokzpVDdTL5VxBMg+McBlnQpAjBswaLL6WFLYwFAbXckDywomZs5U0ujAUhbydUNnWk/0hJlmiAof8z7kRaAFIUVfZFrK4vSoq4CZHgkhHYKoupEACuPVbrWQgDk+IpTOU083ItYAKIhhgyyArQgaAw6JVSrKYfFHgAEQePULT6KM1M+Oy1POFq3OW4zvAC0gPVmxvsTwXcLrgPjHgAWhi47PADdpXkEoAT5aFzyaSBdjls29R7n6u/yLQ0Bcbrxu8Hf5SsoV6poomZEYAR4+H9PgGELByfYPgL/hz5oMXRLDekAAAAASUVORK5CYII="
+        />
+      </div> -->
+
+        <!-- <div class="emailSent">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAnhJREFUaEPtmW1uwzAIhsPJtp5s68nWnswrkT15hG8cVZXaP5OyxOEBXowJbC/+gxe3f3sDPDuCyyLQWvvsMF8T1Lh269fu+BcAvleBlwFaa2jMx7Ztw1ivbQh1r8KkAbrhs7e9hnP3XbMgYYCeKj8Va5VnwyAhAIfXMS2uw0AA2HN/0genE8oTgnADGMZfhrHeyBjruSFcAMrL3C+SwKprmwDKC8JeVyAwtThdmQ5SAQTj9zyPpowntVprCEHLseooC6DRF8Oj3nmMydwjVTjtnaIxgveXpU0wncRU0gCo9818zHide4ZznhQFFiCyQNZoTBdNR+1hBFmbdaAEQMW01PuTg8R1GT3cAOBy0KQQwn/0K4XLRFeDoFE4aPAQgcgLoukT3VOYsvo8gMyO60kjLgI0/8ulM2P81ATOO/RBByUAq5J0I/DAw50bzMKQjYBLwM5KkjZ+6IuWU1pQuAiYAB6hZ9OGFoYMgKoB5UT2lxILjadd6hoNaAYyk4nhVDPnGe+fA2CIc9mh3ZOqnAZM6klgkkhniLDnlfUPa3kAcBAVbbvTaTOTWwLGe73NnLqZCZpIe15I0VAzd0gNq6EjECXjO0C+nY4sQEK+zzyzUzZNW6EDjVJlyn2R1cEK+0z8SClEAS+fCsGcxNQiYk0luHkNKybLs9b/u+ex6aNjFVVP5ogkegixDBVOgOcMthwb1opqU+pYzQg4IPCWMIgxpnev5wZw9j9jtL6P1ZnxOl7m8jzdeoQAnBAZGYxnwhUuDOBMqSiEO2XowmkAAvJ6H/mEcjg+nyIQ/uhn1l3wsz6ioVoegaoB1efLKVQ1oPr8G6Dqwerzv6YRyEAmjVX/AAAAAElFTkSuQmCC"
+          />
+          <p>E-mail sent!</p>
+        </div> -->
+      </div>
+    </form>
+
+    <div class="footer">
+      <div class="navigationBar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div>
+        <img src="images/mastercardIcon.png" alt="" />
+        <img src="images/visaIcon.png" alt="" />
+      </div>
+    </div>
+
+    <script src="goToCart.js"></script>
+    <script src="mobileVersion/displayMenu.js"></script>
+  </body>
+</html>

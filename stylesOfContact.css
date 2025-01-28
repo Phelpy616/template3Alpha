@@ -1,0 +1,184 @@
+/*getting fonts from the local host*/
+@font-face {
+  font-family: "Zombie curse";
+  src: url(fonts/Curse\ of\ the\ Zombie.ttf);
+}
+
+/* Global body settings */
+body {
+  width: 100%;
+  height: 105vh;
+  margin: 0;
+  min-height: 105vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Andale mono";
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between; /* Space items across the header */
+  padding: 10px; /* Optional padding for spacing */
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top of the page */
+  left: 0; /* Ensure it spans the full width */
+  width: 100%; /* Ensure the header spans the entire viewport width */
+  height: auto;
+  background-color: white; /* Add a background color to prevent overlap issues */
+  z-index: 1000; /* Keep it above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for emphasis */
+}
+
+.header div:nth-child(1) {
+  display: flex;
+  gap: 20px;
+  margin-left: 25px;
+}
+
+.header div:nth-child(1) a {
+  text-decoration: none;
+}
+
+.logo {
+  flex-grow: 1; /* Allow the logo to take up available space */
+  text-align: center; /* Center the logo inside its flex item */
+}
+
+.logo img {
+  width: 200px;
+  position: relative;
+  transform: translateX(-40%);
+}
+
+.cart {
+  width: auto;
+  height: auto;
+  flex: 0; /* Prevent the cart from growing */
+  margin-right: 50px; /* Moves the cart 50px to the left */
+  cursor: pointer;
+}
+
+.cart img {
+  width: 30px;
+  height: auto;
+}
+
+/*contact form*/
+form {
+  width: 50%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  font-family: "Poppins", sans-serif;
+  padding: 3rem;
+}
+
+.input-control {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  width: 100%;
+}
+
+.contact-msg {
+  height: 150px;
+  line-height: 1.2;
+  padding: 20px 30px;
+  width: 96.5%;
+  font-family: "Poppins", sans-serif;
+  resize: none;
+}
+
+.input-control:focus-visible,
+.contact-msg:focus-visible {
+  outline: none;
+}
+
+.btn-submit {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.spinner img {
+  width: 100%; /* Make the image fit within the container */
+  height: auto;
+  animation: spin 1s linear infinite; /* Apply the spin animation */
+  position: relative;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Complete a full 360-degree rotation */
+  }
+}
+
+.emailSent {
+  width: 150px;
+  height: 50px;
+  background-color: green;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+}
+
+/*footer*/
+.footer {
+  margin-top: auto; /* Keep footer at the bottom */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Push content to edges */
+  align-items: center; /* Center content vertically */
+  height: 100px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); /* Add shadow at the top */
+}
+
+.footer div {
+  display: flex; /* Make children align horizontally */
+  gap: 20px; /* Add spacing between children */
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.footer div:nth-child(1) a {
+  text-decoration: none;
+}
+
+.footer div:nth-child(2) {
+  align-items: center;
+}
+
+.footer div:nth-child(2) img:nth-child(1) {
+  height: 40px;
+  width: auto;
+}
+
+.footer div:nth-child(2) img:nth-child(2) {
+  width: 60px;
+  height: auto;
+}

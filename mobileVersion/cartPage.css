@@ -1,0 +1,205 @@
+@media (max-width: 375px) {
+  @font-face {
+    font-family: "Zombie curse";
+    src: url(../fonts/Curse\ of\ the\ Zombie.ttf);
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*header*/
+  .header {
+    width: 375px;
+  }
+
+  .header div:nth-child(1) {
+    display: none;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  .logo img {
+    width: 75px;
+  }
+
+  .cart {
+    margin: 0;
+  }
+
+  /* Menu dropdown overlay */
+  .menu {
+    position: fixed; /* Fix it to the viewport */
+    top: 63px; /* Adjust this to start below the header */
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: 60vh; /* Occupy 80% of the viewport height */
+    background-color: rgba(0, 0, 0, 0.896); /* Semi-transparent background */
+    z-index: 899; /* Below the header, but above other elements */
+    display: none; /* Initially hidden */
+  }
+
+  .header {
+    position: relative;
+    z-index: 900;
+    box-sizing: border-box;
+  }
+
+  .menu div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu div:hover {
+    background-color: rgb(172, 172, 172);
+  }
+
+  .menu div h3 {
+    font-family: "Zombie curse";
+    color: white;
+  }
+
+  /*clothing in the cart*/
+  .clothingInTheCart {
+    margin-top: 10px;
+    grid-template-columns: 100%;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .clothingInTheCart div {
+    gap: 0;
+    margin-bottom: 10px;
+  }
+
+  .clothingInTheCart div div {
+    width: auto;
+  }
+
+  .clothingInTheCart div div h1 {
+    font-size: 5px;
+    margin: 0;
+  }
+
+  .clothingInTheCart div div a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .clothingInTheCart div div:nth-child(1) {
+    width: 30px;
+  }
+
+  .clothingInTheCart div div:nth-child(1) img {
+    width: 30px;
+  }
+
+  .clothingInTheCart div div:nth-child(2) img {
+    width: 60px;
+    height: auto;
+  }
+
+  .clothingInTheCart div div:nth-child(3) {
+    width: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .clothingInTheCart div div:nth-child(3) h1 {
+    font-size: 1rem;
+  }
+
+  .clothingInTheCart div div:nth-child(4) h1 {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+
+  .clothingInTheCart div div:nth-child(6) h1 {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+
+  /*checkout button*/
+  .clothingInTheCart .checkOutField {
+    width: 170px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .clothingInTheCart .checkOutField div:nth-child(1) {
+    width: 80%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .clothingInTheCart .checkOutField div:nth-child(1) h3 {
+    font-size: 1.3rem;
+  }
+
+  .clothingInTheCart .checkOutField div:nth-child(2) {
+    width: 90%;
+    height: 40px;
+
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .clothingInTheCart .checkOutField div:nth-child(2) h1 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .clothingInTheCart .checkOutField div:nth-child(1) h3 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /*footer*/
+  .footer {
+    width: 100%;
+  }
+
+  .footer div {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+
+  .footer div:nth-child(1) {
+    display: flex;
+    gap: 20px;
+    margin-left: 10px;
+  }
+
+  .footer div:nth-child(2) {
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
+  }
+
+  .footer div:nth-child(2) img:nth-child(1) {
+    height: 20px;
+    width: auto;
+  }
+
+  .footer div:nth-child(2) img:nth-child(2) {
+    width: 40px;
+    height: auto;
+  }
+}

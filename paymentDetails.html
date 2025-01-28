@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="paymentDetails.css" />
+    <link rel="stylesheet" href="mobileVersion/paymentDetails.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navigationBar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"
+        />
+      </div>
+      <div class="logo" data-url="index.html">
+        <img src="images/logo.jpg" alt="" />
+      </div>
+      <div class="cart">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAZpJREFUaEPtmEFSwzAMRX83rFhxIjgQnKFsegEOBD0QrFixoVUnYRhHsWVFkp0Ze9GZZiznP33JcXLAzsdh5/oxAFo7OBzo0YFfRtQHgPP1+rG14PT+XAlxAHPca28QtQAE8gSAHOliaABIPEF0MSS70COA90RtNy5IAEg7ARDIPLpxQQrAuSCNdS21GhGpC12UUQ0A54JrdpnFF9t4DQCtl3tGRMAseq8WIC2jCNHZh28tQOsy2lxC3JYa6cJi46h1gMS2coF99mgAWjUze5DUArRoZlarFiC6jFaP8VqA6GZ2AYh0YTXRWxyIciH7FrgVIMKF7KFxK4D3llp877AA8NxSix8RLAA8y6iorzhBeNDxcKGYfdJmBeDhQiiARzOLkiuaJCwjKxeqPmNaAgg5badZA9wDuJsk/gD4FsrVxpk1Mel8uP7Q1+vnSfTb9P+rAKGNuy1r5QBl8PRP/KyZIF4yANq4vyWtACiLnytCc/fQxg2ANNnaUtDGmTuw+yYW7pb206ya2F6ZcMUBIEyU27ThgFtqhQtfAGeWUDHsVkhlAAAAAElFTkSuQmCC"
+        />
+      </div>
+    </div>
+
+    <div class="menu">
+      <div data-url="posters.html"><h3>POSTERS</h3></div>
+      <div data-url="clothing/clothing.html"><h3>CLOTHING</h3></div>
+      <div data-url="cartPage.html"><h3>CART</h3></div>
+      <div data-url="about.html"><h3>ABOUT</h3></div>
+      <div data-url="contact.html"><h3>CONTACT</h3></div>
+    </div>
+
+    <div class="checkout-wrapper">
+      <!-- Shipping Details -->
+      <div class="shipping-details">
+        <h2>Shipping Details</h2>
+        <form>
+          <div>
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+          <div>
+            <label for="country">Country/Region</label>
+            <select id="country" required>
+              <option value="" disabled selected>Select your country</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="Mexico">Mexico</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Poland">Poland</option>
+            </select>
+          </div>
+          <div>
+            <label for="street-address">Street Address</label>
+            <input
+              type="text"
+              id="street-address"
+              placeholder="House number and street name"
+              required
+            />
+          </div>
+          <div>
+            <label for="house-type">House Type</label>
+            <input
+              type="text"
+              id="house-type"
+              placeholder="Apartment, suite, unit"
+            />
+          </div>
+          <div>
+            <label for="town-city">Town/City</label>
+            <input
+              type="text"
+              id="town-city"
+              placeholder="Enter your town or city"
+              required
+            />
+          </div>
+          <div>
+            <label for="state-county">State/County</label>
+            <input
+              type="text"
+              id="state-county"
+              placeholder="Enter your state or county"
+              required
+            />
+          </div>
+          <div>
+            <label for="postcode-zip">Postcode/ZIP</label>
+            <input
+              type="text"
+              id="postcode-zip"
+              placeholder="Enter your postcode or ZIP"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="tel"
+              id="phone-number"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="information-confirmation" required />
+            <label for="information-confirmation"
+              >I confirm that all information provided is true and
+              correct.</label
+            >
+          </div>
+        </form>
+      </div>
+
+      <!-- Order Details -->
+      <div class="order-details">
+        <h2>Your Order</h2>
+        <div class="order-summary">
+          <p>Quantity: 2</p>
+          <p>Item Name: Stylish Jacket</p>
+          <p>Total Price: $100.00</p>
+        </div>
+        <div class="payment-method">
+          <label for="payment-method">Payment Method</label>
+          <select id="payment-method" required>
+            <option value="" disabled selected>
+              Select your payment method
+            </option>
+            <option value="paypal">PayPal</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="bank-transfer">Bank Transfer</option>
+          </select>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="order-confirmation" required />
+          <label for="order-confirmation"
+            >I agree with the order and total price.</label
+          >
+        </div>
+        <button class="btn">Place order</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="navigationBar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <img src="images/mastercardIcon.png" alt="" />
+        <img src="images/visaIcon.png" alt="" />
+      </div>
+    </div>
+
+    <script src="mobileVersion/displayMenu.js"></script>
+    <script src="goToHome.js"></script>
+  </body>
+</html>
