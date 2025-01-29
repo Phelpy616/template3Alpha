@@ -4,6 +4,11 @@
   src: url(fonts/Curse\ of\ the\ Zombie.ttf);
 }
 
+@font-face {
+  font-family: "Andale mono";
+  src: url(fonts/Andale\ Mono.ttf);
+}
+
 /* Global body settings */
 body {
   width: 100%;
