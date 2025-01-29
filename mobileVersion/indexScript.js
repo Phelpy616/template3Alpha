@@ -42,13 +42,3 @@ function setOurProductsPhraseForiPhoneX() {
   }
 }
 window.addEventListener("load", setOurProductsPhraseForiPhoneX);
-
-//function test
-function test() {
-  const phraseContainer = document.querySelector(".topPicksText");
-
-  if (window.innerWidth <= 400) {
-    phraseContainer.querySelector("h2").textContent = "TEST";
-  }
-}
-window.addEventListener("load", test);
