@@ -12,11 +12,10 @@
 
   /*header*/
   .header {
-    width: 375px;
-  }
-
-  .header div:nth-child(1) {
-    display: none;
+    height: 60px; /* Adjust this value based on your header's actual height */
+    position: relative;
+    z-index: 900;
+    box-sizing: border-box;
   }
 
   .logo img {
@@ -30,13 +29,14 @@
   /* Menu dropdown overlay */
   .menu {
     position: fixed; /* Fix it to the viewport */
-    top: 63px; /* Adjust this to start below the header */
+    top: 60px; /* Adjust this to start below the header */
     left: 0;
     width: 100%; /* Full width of the viewport */
     height: 60vh; /* Occupy 80% of the viewport height */
     background-color: rgba(0, 0, 0, 0.896); /* Semi-transparent background */
     z-index: 899; /* Below the header, but above other elements */
-    display: none; /* Initially hidden */
+    display: none; /*Initially hidden*/
+    margin-top: 0;
   }
 
   .header {

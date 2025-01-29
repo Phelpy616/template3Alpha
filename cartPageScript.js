@@ -20,8 +20,10 @@ function renderClothingsInCart() {
         <div><img src="${clothing.src}" alt="" /></div>
         <div><h1>${clothing.name}</h1></div>
         <div><h1>${clothing.price}</h1></div>
-        <div><input type="number" value="1" min="1" max="50" /></div>
-        <div><h1>${clothing.totalPrice}</h1></div>
+        <div><h1>|${clothing.quantity}|</h1></div>
+        <div>
+        <p>Total price</p>
+        <h1>${clothing.totalPrice}</h1></div>
       </div>`;
 
     clothingInTheCart.insertAdjacentHTML("beforeend", html);
@@ -47,8 +49,11 @@ function displayPostersInCart() {
         <div><img src="${poster.src}" alt="" /></div>
         <div><h1>${poster.name}</h1></div>
         <div><h1>${poster.price}</h1></div>
-        <div><input type="number" value="1" min="1" max="50" /></div>
-        <div><h1>${poster.totalPrice}</h1></div>
+        <div><h1>|${poster.quantity}|</h1></div>
+        <div>
+        <p>Total price</p>
+        <h1>${poster.totalPrice}</h1>
+        </div>
       </div>`;
 
     clothingInTheCart.insertAdjacentHTML("beforeend", html);

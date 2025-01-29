@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Zombie curse";
+  src: url(fonts/Curse\ of\ the\ Zombie.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,6 +60,42 @@ body {
 .cart img {
   width: 30px;
   height: auto;
+}
+
+/* Menu dropdown overlay */
+.menu {
+  position: fixed; /* Fix it to the viewport */
+  top: 63px; /* Adjust this to start below the header */
+  left: 0;
+  width: 100%; /* Full width of the viewport */
+  height: 60vh; /* Occupy 80% of the viewport height */
+  background-color: rgba(0, 0, 0, 0.896); /* Semi-transparent background */
+  z-index: 899; /* Below the header, but above other elements */
+  display: none; /* Initially hidden */
+  margin-top: 70px;
+  font-family: "Zombie curse";
+  font-size: 1rem;
+}
+
+.menu div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 6vh;
+  align-items: center;
+}
+
+.menu div:nth-child(1) {
+  margin-top: 5px;
+}
+
+.menu div:hover {
+  background-color: rgb(172, 172, 172);
+}
+
+.menu div h3 {
+  font-family: "Zombie curse";
+  color: white;
 }
 
 /*checkout wrapper*/
@@ -145,36 +186,35 @@ select {
 
 /*footer*/
 .footer {
-  /* margin-top: auto; Keep footer at the bottom */
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Push content to edges */
-  align-items: center; /* Center content vertically */
-  height: 100px;
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Add shadow at the top */
-}
-
-.footer div {
-  display: flex; /* Make children align horizontally */
-  gap: 20px; /* Add spacing between children */
-  margin-left: 30px;
-  margin-right: 50px;
-}
-
-.footer div:nth-child(1) a {
-  text-decoration: none;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  position: relative; /* Change to fixed if needed */
+  width: 100%;
+  bottom: 0;
   font-family: "Andale mono";
+  margin-top: auto;
 }
 
-.footer div:nth-child(2) {
+.footer-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.footer div:nth-child(2) img:nth-child(1) {
-  height: 40px;
-  width: auto;
+.footer-links {
+  margin-top: 5px;
 }
 
-.footer div:nth-child(2) img:nth-child(2) {
-  width: 60px;
-  height: auto;
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
 }

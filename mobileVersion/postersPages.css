@@ -17,10 +17,6 @@
     width: 375px;
   }
 
-  .header div:nth-child(1) {
-    display: none;
-  }
-
   .logo img {
     width: 75px;
   }
@@ -32,7 +28,7 @@
   /* Menu dropdown overlay */
   .menu {
     position: fixed; /* Fix it to the viewport */
-    top: 63px; /* Adjust this to start below the header */
+    top: 10px; /* Adjust this to start below the header */
     left: 0;
     width: 100%; /* Full width of the viewport */
     height: 60vh; /* Occupy 80% of the viewport height */

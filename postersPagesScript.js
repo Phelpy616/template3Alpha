@@ -129,12 +129,25 @@ addToCartBtn.addEventListener("click", () => {
 
   const posterToAdd = { ...posterData, quantity, totalPrice };
   addToCart(posterToAdd);
-
-  alert(`${posterData.name} has been added to your cart.`);
 });
 
 //go to cart page
 const cartLogo = document.querySelector(".cart");
 cartLogo.addEventListener("click", function () {
   window.location.href = "cartPage.html";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const addToCartBtn = document.querySelector(".addToCartBtn");
+  const cartPopup = document.getElementById("cartPopup");
+
+  addToCartBtn.addEventListener("click", function () {
+    // Show popup
+    cartPopup.classList.add("show");
+
+    // Hide after 2 seconds
+    setTimeout(() => {
+      cartPopup.classList.remove("show");
+    }, 2000);
+  });
 });

@@ -1,4 +1,4 @@
-// Function to check if the device is iPhone X and switch the video src
+// Function to check if the device width is less or equal to 400 and switch to img
 function displayVideoOrImg() {
   const videoContainer = document.querySelector(".carVidTop");
 
@@ -18,26 +18,24 @@ function displayVideoOrImg() {
 window.addEventListener("load", displayVideoOrImg);
 window.addEventListener("resize", displayVideoOrImg);
 
-// Function to check if the device is iPhone X and switch the ourProductsImgNTxt img src
+// Function to check if the device width is less or equal to 400 switch the ourProductsImgNTxt img src
 function setImgForiPhoneX() {
   const image = document.querySelector(".ourProductsImgNTxt");
 
-  const windowSize = window.innerWidth === 375 && window.innerHeight === 812;
-
-  if (windowSize) {
+  if (window.innerWidth <= 400) {
     image.querySelector("img").src = "mobileVersion/Kong.jpg";
   }
 }
 window.addEventListener("load", setImgForiPhoneX);
 window.addEventListener("resize", setImgForiPhoneX);
 
-// Function to check if the device is iPhone X and switch the phrase of ourProducts
+// Function to check if the device width is less or equal to 400 and switch the phrase of ourProducts
 function setOurProductsPhraseForiPhoneX() {
   const phrase = document.querySelector(".interestedInTxt");
 
   // const windowSize = window.innerWidth === 375 && window.innerHeight === 812;
 
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <= 400) {
     phrase.querySelector("h1").textContent = "OUR PRODUCTS";
   }
 }

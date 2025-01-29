@@ -6,12 +6,10 @@
 
   /*header*/
   .header {
+    height: 60px; /* Adjust this value based on your header's actual height */
     position: relative;
     z-index: 900;
-  }
-
-  .header div:nth-child(1) {
-    display: none;
+    box-sizing: border-box;
   }
 
   .header div:nth-child(2) img {
@@ -26,27 +24,24 @@
     margin: 0;
   }
 
+  .carVidTop img {
+    width: 100%;
+  }
+
   /* Menu dropdown overlay */
-  .wrapper .menu {
+  .menu {
     position: fixed; /* Fix it to the viewport */
-    top: 63px; /* Adjust this to start below the header */
+    top: 60px; /* Match the height of the header */
     left: 0;
     width: 100%; /* Full width of the viewport */
-    height: 60vh; /* Occupy 80% of the viewport height */
+    height: 60vh; /* Occupy 60% of the viewport height */
     background-color: rgba(0, 0, 0, 0.896); /* Semi-transparent background */
     z-index: 899; /* Below the header, but above other elements */
     display: none; /* Initially hidden */
+    margin-top: 0; /* Remove any additional margin */
   }
 
-  .header {
-    position: relative;
-    z-index: 900;
-    height: 8vh;
-    padding: 10px;
-    box-sizing: border-box; /* Includes padding in total width/height */
-  }
-
-  .wrapper .menu div {
+  .menu div {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -56,13 +51,9 @@
     background-color: rgb(172, 172, 172);
   }
 
-  .wrapper .menu div h3 {
+  .menu div h3 {
     font-family: "Zombie curse";
     color: white;
-  }
-
-  .carVidTop img {
-    width: 100%;
   }
 
   /* Car image at the top */
@@ -92,6 +83,7 @@
     width: 80%; /* Control overall container size */
     margin: 0 auto; /* Center the container itself */
     align-items: center; /* Align items vertically */
+    text-shadow: none;
   }
 
   .topPicks div {
@@ -141,9 +133,10 @@
     font-family: "Andale mono";
   }
 
-  /**/
+  /*our products text at the bottom*/
   .interestedInTxt {
     margin-top: 50px;
+    text-shadow: none;
   }
 
   .interestedInTxt h1 {
