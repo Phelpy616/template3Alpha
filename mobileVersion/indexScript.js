@@ -1,15 +1,22 @@
-// Function to check if the device is iPhone X and switch to image
-function changeImgForVid() {
-  const video = document.querySelector(".carVidTop video");
+// Function to check if the device is iPhone X and switch the video src
+function displayVideoOrImg() {
+  const videoContainer = document.querySelector(".carVidTop");
 
-  const windowSize = window.innerWidth === 375 && window.innerHeight === 812;
+  if (window.innerWidth >= 400) {
+    videoContainer.innerHTML = "";
+    const html = ` <video width="100%" height="360" autoplay loop muted>
+          <source src="carVid.mov" type="video/mp4" />
+        </video>`;
 
-  if (windowSize) {
-    video.style.display = "block";
+    videoContainer.insertAdjacentHTML("afterbegin", html);
+  } else {
+    videoContainer.innerHTML = "";
+    const html2 = `<img src="mobileVersion/lambo.png" alt="" />`;
+    videoContainer.insertAdjacentHTML("afterbegin", html2);
   }
 }
-window.addEventListener("load", changeImgForVid);
-window.addEventListener("resize", changeImgForVid);
+window.addEventListener("load", displayVideoOrImg);
+window.addEventListener("resize", displayVideoOrImg);
 
 // Function to check if the device is iPhone X and switch the ourProductsImgNTxt img src
 function setImgForiPhoneX() {
@@ -28,10 +35,20 @@ window.addEventListener("resize", setImgForiPhoneX);
 function setOurProductsPhraseForiPhoneX() {
   const phrase = document.querySelector(".interestedInTxt");
 
-  const windowSize = window.innerWidth === 375 && window.innerHeight === 812;
+  // const windowSize = window.innerWidth === 375 && window.innerHeight === 812;
 
-  if (windowSize) {
+  if (window.innerWidth <= 375) {
     phrase.querySelector("h1").textContent = "OUR PRODUCTS";
   }
 }
 window.addEventListener("load", setOurProductsPhraseForiPhoneX);
+
+//function test
+function test() {
+  const phraseContainer = document.querySelector(".topPicksText");
+
+  if (window.innerWidth <= 400) {
+    phraseContainer.querySelector("h2").textContent = "TEST";
+  }
+}
+window.addEventListener("load", test);
