@@ -17,10 +17,6 @@
     width: 375px;
   }
 
-  .header div:nth-child(1) {
-    display: none;
-  }
-
   .logo {
     width: 75px;
   }

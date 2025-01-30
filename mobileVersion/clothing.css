@@ -49,10 +49,6 @@
     z-index: 900;
   }
 
-  .header div:nth-child(1) {
-    display: block;
-  }
-
   .menu div {
     display: flex;
     justify-content: center;
