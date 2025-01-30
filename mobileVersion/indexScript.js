@@ -2,7 +2,7 @@
 function displayVideoOrImg() {
   const videoContainer = document.querySelector(".carVidTop");
 
-  if (window.innerWidth >= 400) {
+  if (window.innerWidth >= 450) {
     videoContainer.innerHTML = "";
     const html = ` <video width="100%" height="360" autoplay loop muted>
           <source src="carVid.mov" type="video/mp4" />
@@ -22,7 +22,7 @@ window.addEventListener("resize", displayVideoOrImg);
 function setImgForiPhoneX() {
   const image = document.querySelector(".ourProductsImgNTxt");
 
-  if (window.innerWidth <= 400) {
+  if (window.innerWidth <= 450) {
     image.querySelector("img").src = "mobileVersion/Kong.jpg";
   }
 }
@@ -35,7 +35,7 @@ function setOurProductsPhraseForiPhoneX() {
 
   // const windowSize = window.innerWidth === 375 && window.innerHeight === 812;
 
-  if (window.innerWidth <= 400) {
+  if (window.innerWidth <= 450) {
     phrase.querySelector("h1").textContent = "OUR PRODUCTS";
   }
 }
