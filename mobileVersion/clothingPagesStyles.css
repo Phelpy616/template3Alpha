@@ -13,9 +13,6 @@
   }
 
   /*header*/
-  .header {
-    width: 375px;
-  }
 
   .logo {
     width: 75px;
@@ -29,10 +26,9 @@
     margin: 0;
   }
 
-  /* Menu dropdown overlay */
   .menu {
     position: fixed; /* Fix it to the viewport */
-    top: 63px; /* Adjust this to start below the header */
+    top: 10px; /* Adjust this to start below the header */
     left: 0;
     width: 100%; /* Full width of the viewport */
     height: 60vh; /* Occupy 80% of the viewport height */
