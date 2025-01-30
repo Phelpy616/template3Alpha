@@ -1,7 +1,12 @@
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   @font-face {
     font-family: "Zombie curse";
     src: url(../fonts/Curse\ of\ the\ Zombie.ttf);
+  }
+
+  @font-face {
+    font-family: "Andale mono";
+    src: url(../fonts/Andale\ Mono.ttf);
   }
 
   body {
@@ -84,6 +89,12 @@
     padding: 10px;
   }
 
+  .posterInformations h2,
+  .posterInformations h3 {
+    margin: 0;
+    font-family: "Andale mono";
+  }
+
   /*poster description*/
   .clothingDescription {
     margin-left: 0;
@@ -92,11 +103,13 @@
     width: 90%;
     display: flex;
     align-self: center;
+    font-family: "Andale mono";
   }
 
   /*footer*/
   .footer {
     width: 100%;
+    font-family: "Andale mono";
   }
 
   .footer div {
