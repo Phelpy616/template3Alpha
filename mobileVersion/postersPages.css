@@ -81,9 +81,14 @@
   .posterInformations div:nth-child(1) div div img {
     width: 100%;
   }
+
   .posterInformations div:nth-child(2) {
     margin-top: 20px;
     padding: 10px;
+  }
+
+  .posterInformations div:nth-child(2) h1{
+    text-shadow: none;
   }
 
   .posterInformations h2,

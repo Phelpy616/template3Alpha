@@ -33,8 +33,6 @@ window.addEventListener("resize", setImgForiPhoneX);
 function setOurProductsPhraseForiPhoneX() {
   const phrase = document.querySelector(".interestedInTxt");
 
-  // const windowSize = window.innerWidth === 375 && window.innerHeight === 812;
-
   if (window.innerWidth <= 450) {
     phrase.querySelector("h1").textContent = "OUR PRODUCTS";
   }

@@ -63,6 +63,11 @@
     color: white;
   }
 
+  /*top picks text*/
+  .topPicksTxt{
+    text-shadow: none;
+  }
+
   /*top picks*/
   .topPicks {
     display: flex;
@@ -125,11 +130,11 @@
   /*our products text at the bottom*/
   .interestedInTxt {
     margin-top: 50px;
-    text-shadow: none;
   }
 
   .interestedInTxt h1 {
     margin: 0;
+    text-shadow: none;
   }
 
   /*products*/

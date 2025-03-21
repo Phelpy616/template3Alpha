@@ -81,9 +81,14 @@
   .clothingInformations div:nth-child(1) div div img {
     width: 100%;
   }
+
   .clothingInformations div:nth-child(2) {
     margin-top: 20px;
     padding: 10px;
+  }
+
+  .clothingInformations div:nth-child(2) h1{
+    text-shadow: none;
   }
 
   .posterInformations h2,
