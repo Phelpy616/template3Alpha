@@ -64,7 +64,7 @@
   }
 
   /*top picks text*/
-  .topPicksTxt{
+  .topPicksText h2 {
     text-shadow: none;
   }
 
@@ -77,7 +77,6 @@
     width: 80%; /* Control overall container size */
     margin: 0 auto; /* Center the container itself */
     align-items: center; /* Align items vertically */
-    text-shadow: none;
   }
 
   .topPicks div {
