@@ -19,10 +19,15 @@
 
   /*header*/
   .header {
-    width: 375px;
+    height: 60px; /* Adjust this value based on your header's actual height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    box-sizing: border-box;
   }
 
-  .logo img {
+  .logo  {
     width: 75px;
   }
 
@@ -43,11 +48,6 @@
     margin-top: 5px;
     box-sizing: border-box;
     padding: 20px;
-  }
-
-  .header {
-    position: relative;
-    z-index: 900;
   }
 
   .menu div {
