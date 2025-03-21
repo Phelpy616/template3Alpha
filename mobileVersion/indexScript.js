@@ -2,7 +2,7 @@
 function displayVideoOrImg() {
   const videoContainer = document.querySelector(".carVidTop");
 
-  if (window.innerWidth >= 450) {
+  if (window.innerWidth > 450) {
     videoContainer.innerHTML = "";
     const html = ` <video width="100%" height="360" autoplay loop muted>
           <source src="carVid.mov" type="video/mp4" />

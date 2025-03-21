@@ -17,13 +17,15 @@
 
   /*header*/
   .header {
-    height: 60px; /* Adjust this value based on your header's actual height */
-    position: relative;
+    height: 60px; 
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 900;
     box-sizing: border-box;
   }
 
-  .logo img {
+  .logo  {
     width: 75px;
   }
 
@@ -42,11 +44,6 @@
     z-index: 899; /* Below the header, but above other elements */
     display: none; /* Initially hidden */
     margin-top: 0;
-  }
-
-  .header {
-    position: relative;
-    z-index: 900;
   }
 
   .menu div {
@@ -68,6 +65,7 @@
   .clothingTxt {
     margin-top: 10px;
     text-shadow: none;
+    margin-top: 60px;
   }
 
   /*clothing*/

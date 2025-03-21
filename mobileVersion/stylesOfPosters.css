@@ -13,12 +13,14 @@
   /*header*/
   .header {
     height: 60px; /* Adjust this value based on your header's actual height */
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 900;
     box-sizing: border-box;
   }
 
-  .logo img {
+  .logo  {
     width: 75px;
   }
 
@@ -39,15 +41,6 @@
     margin-top: 0;
   }
 
-  .header {
-    position: relative;
-    z-index: 900;
-
-    height: 8vh;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
   .menu div {
     display: flex;
     justify-content: center;
@@ -65,7 +58,7 @@
 
   /*poster text at the top*/
   .posterTxt {
-    margin-top: 10px;
+    margin-top: 60px;
   }
 
   /*posters*/

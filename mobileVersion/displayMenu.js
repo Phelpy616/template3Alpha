@@ -2,7 +2,7 @@
 const menu = document.querySelector(".menu");
 const menuElements = document.querySelectorAll(".menu div");
 // Add a button or trigger to toggle the menu
-const toggleMenuButton = document.querySelector(".header div:nth-child(1) img"); // Example: your logo or another button
+const toggleMenuButton = document.querySelector(".header .menuBtn"); // Example: your logo or another button
 
 // Toggle the menu visibility
 toggleMenuButton.addEventListener("click", () => {
