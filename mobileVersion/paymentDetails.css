@@ -67,6 +67,27 @@
     font-size: 1.06rem;
   }
 
+    /*tag*/
+.tag{
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 3000;
+  background-color: black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tag p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  color: white;
+}
+
   /*checkout*/
   .checkout-wrapper {
     display: flex;

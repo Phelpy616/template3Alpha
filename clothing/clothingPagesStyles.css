@@ -71,6 +71,27 @@ body {
   color: white;
 }
 
+/*tag*/
+.tag{
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3000;
+  background-color: black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tag p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: white;
+}
+
 /*poster*/
 .clothingInformations {
   display: flex;
