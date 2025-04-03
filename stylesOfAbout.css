@@ -170,3 +170,27 @@ body {
 .footer-links a:hover {
   color: #ffcc00;
 }
+
+@media (min-width: 451px) and (max-width: 834px){
+ /*text and image*/
+.txtAndImg {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.txtAndImg div:nth-child(1) {
+  width: 400px;
+  height: auto;
+}
+
+.txtAndImg div:nth-child(1) p:nth-child(1){
+  margin: 0;
+}
+
+.txtAndImg div:nth-child(2) img {
+  width: 300px;
+  height: auto;
+}
+
+}
+

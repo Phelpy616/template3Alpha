@@ -276,3 +276,56 @@ body {
 .footer-links a:hover {
   color: #ffcc00;
 }
+
+@media (min-width: 451px) and (max-width: 834px){
+  body {
+    height: fit-content;
+    min-height: unset;
+  }
+   
+  /*poster's information*/
+  .posterInformations{
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .posterInformations div:nth-child(1) div img {
+    width: 85%; 
+  }
+  
+ /*poster's description*/
+.posterDescription {
+  flex: none; /* Take up remaining space between header and footer */
+}
+
+/*add to cart btn*/
+.addToCartBtn {
+  font-size: 1.1rem;
+  height: 45px;
+  width: 150px;
+}
+
+/*footer*/
+.footer {
+  position: absolute; 
+  left: 0;
+}
+}
+
+/*ipad pro 13 portrait*/
+@media (device-width: 1024px) and (device-height: 1366px){
+  body {
+    height: 100vh;
+    min-height: unset;
+  }
+
+  .posterInformations div:nth-child(2) {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+/*poster's description*/
+.posterDescription {
+  flex: none; /* Take up remaining space between header and footer */
+}
+}

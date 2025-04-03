@@ -345,3 +345,27 @@ body {
 .footer-links a:hover {
   color: #ffcc00;
 }
+
+/*ipads except pro 13 portrait*/
+@media (min-width: 451px) and (max-width: 834px){
+  body {
+    height: auto;
+    min-height: unset;
+  }
+}
+
+/*ipad pro portrait*/
+@media (device-width: 1024px) and (device-height: 1366px){
+  body {
+    height: auto;
+    min-height: unset;
+  }
+}
+
+/*ipad pro 13 landscape*/
+@media (device-width: 1366px) and (device-height: 1024px) {
+  body {
+    height: auto;
+    min-height: unset;
+  }
+}

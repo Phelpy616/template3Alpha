@@ -197,3 +197,29 @@ p {
 .footer-links a:hover {
   color: #ffcc00;
 }
+
+@media (min-width: 451px) and (max-width: 834px){
+  body {
+    height: fit-content;
+    min-height: unset;
+  }
+
+  .footer {
+    position: absolute; 
+    left: 0;
+  }
+}
+
+/*ipad pro 13 portrait*/
+@media (device-width: 1024px) and (device-height: 1366px){
+  body {
+    height: 100vh;
+    min-height: unset;
+  }
+
+  .footer {
+    position: absolute; 
+    left: 0;
+  }
+}
+

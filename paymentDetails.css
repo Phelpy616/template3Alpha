@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -241,4 +242,28 @@ select {
 
 .footer-links a:hover {
   color: #ffcc00;
+}
+
+@media (min-width: 451px) and (max-width: 834px){
+  body {
+    height: fit-content;
+    min-height: unset;
+  }
+
+  /*checkout wrapper*/
+.shipping-details,
+.order-details {
+  width: 45%;
+}
+
+
+.btn {
+  width: 70%;
+}
+
+/*footer*/
+.footer {
+  position: absolute; 
+  left: 0;
+}
 }
